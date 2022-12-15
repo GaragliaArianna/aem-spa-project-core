@@ -38,8 +38,10 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <sonar.organization>adobeinc</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.projectKey>adobe_aem-spa-project-core</sonar.projectKey>
+        <sonar.projectKey>com.adobe.aem_spa.project.core2</sonar.projectKey>
         <sonar.moduleKey>${project.groupId}:${project.artifactId}</sonar.moduleKey>
+<sonar.organization>2022-mmqs-org2</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <scm>
@@ -619,7 +621,6 @@
                 <artifactId>javax.inject</artifactId>
                 <version>1</version>
             </dependency>
-
             <!-- OSGi Dependencies -->
             <dependency>
                 <groupId>org.osgi</groupId>
