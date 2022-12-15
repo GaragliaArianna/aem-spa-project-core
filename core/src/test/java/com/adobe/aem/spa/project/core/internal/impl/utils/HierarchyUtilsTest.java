@@ -136,7 +136,7 @@ class HierarchyUtilsTest {
 
         SlingHttpServletRequest wrappedRequest = HierarchyUtils.createHierarchyServletRequest(request, page, entryPage);
         verify(request, times(1)).setAttribute(eq(ATTR_CURRENT_PAGE), eq(page));
-        verify(request, times(1)).setAttribute(eq(ATTR_HIERARCHY_ENTRY_POINT_PAGE), eq(entryPage));
+        verify(request, times(1)).setAttribute(ATTR_HIERARCHY_ENTRY_POINT_PAGE, entryPage);
         assertEquals(componentContext, wrappedRequest.getAttribute(ATTR_COMPONENT_CONTEXT));
     }
 
